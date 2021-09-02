@@ -1,0 +1,2 @@
+# mink.io-homepage
+ 
