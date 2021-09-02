@@ -59,20 +59,37 @@
         .nav-bar .fixed-top {
     z-index: 1;
     background: white;
+    box-shadow: rgb(0 0 0 / 5%) 0px 10px 30px;
 }
 
 #home {
     padding-top: 4rem;
+    padding-bottom: 3rem;
 }
 .head-home {
     padding-top: 2.1rem;
+}
+div#steps {
+    background: #f8f9fa;
+    padding-top: 4rem;
+}
+#steps img.card-img-top.img-fluid {
+    width: fit-content;
+    padding: 15px 20px 10px 20px;
+}
+.absolute-bg-img i {
+    position: absolute;
+    top: 12px;
+    color: white;
+    left: 25px;
+    font-size: 2.5rem;
 }
     </style>
 </head>
 
 <body>
     <div class="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light mt-3 px-5 fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light py-3 px-5 fixed-top">
             <a class="navbar-brand" href="#">Mink.io</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -115,7 +132,34 @@
             </section>
     <div class="section" id="steps">
         <div class="container">
-    
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="heading-steps">
+                        <h3>Steps</h3>
+                        <h2>Steps To Work</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veniam magnam architecto, porro
+                            voluptatibus ipsa!</p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <img src="image/bg-icon.png" class="card-img-top img-fluid" alt="bg-icon">
+                                    <div class="absolute-bg-img"><i class="uil uil-asterisk"></i></div>
+                                    <div class="card-body">
+                                        <h2>Step 01</h2>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                            of the card's
+                                            content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
