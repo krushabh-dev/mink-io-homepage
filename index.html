@@ -225,7 +225,7 @@ span.singli-line-grad::before {
 section#contact-us {
     background: #f8f9fa;
 }
-section#contact-us input, section#contact-us textarea {
+section#contact-us input, section#contact-us textarea, #contact-us > div > div > div:nth-child(2) > form > button {
     background-color: white;
     box-shadow: 0 8px 20px 0 rgb(0 0 0 / 8%);
     border-radius: 50px;
@@ -464,12 +464,12 @@ span.video-play-button span {
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col-md-12 text-center">
-                                                        <div class="heading pt-5">
+                                                        <div class="heading pt-5" data-aos="fade-up" data-aos-duration="3000">
                                                             <h2 class="big-heading">Explore Mink</h2>
                                                             <p class="about-content">Watch The Below Video To Understand More About Mink</p>
                                                             <span class="singli-line-grad"></span>
                                                         </div>
-                                                        <div class="col-md-12">
+                                                        <div class="col-md-12" data-aos="fade-up" data-aos-duration="3000">
                                                             <div class="vid-img-area">
                                                                 <div class="vid-area">
                                                                     <a href="https://www.youtube.com/watch?v=tSQXqmqhCts&feature=emb_imp_woyt" target="_blank" rel="noopener noreferrer"
@@ -538,7 +538,7 @@ span.video-play-button span {
                         <input type="text" class="form-control" placeholder="Full Name" name="name" required>
                         <input type="email" class="form-control" placeholder="Email Address" name="email" required>
                         <textarea class="form-control" placeholder="Message" name="message" required></textarea>
-                        <input type="submit" value="Submit">
+                        <button type="submit" class="btn btn-primary">Send Message <i class="uil uil-message"></i></button>
                     </form>
                 </div>
             </div>
