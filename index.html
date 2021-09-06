@@ -151,7 +151,7 @@ h2.big-heading {
     font-size: 36px;
     line-height: 36px;
     color: #3C3664;
-    margin-bottom: 26px;
+    margin-bottom: 12px;
 }
 
 p.about-content {
@@ -159,6 +159,12 @@ p.about-content {
     font-size: 15px;
     line-height: 25px;
     color: #595954;
+}
+
+.step-card .card {
+    min-height: 16.2rem;
+    box-shadow: 0 15px 40px 0 rgb(0 0 0 / 8%);
+    border: 0 !important;
 }
 
         .list-item {
@@ -180,6 +186,161 @@ footer h3{
     padding-top: 3rem;
     text-align: -webkit-center;
     font-size: 1rem;
+}
+
+@media (max-width: 768px){
+    footer h3 {
+        font-size: 0.5rem;
+        padding-top: 2rem;
+    }
+    #home > div > div > div.col-md-6.mt-5.pt-5 > div > button {
+    margin-left: 1rem;
+}
+span.singli-line-grad::before {
+    position: absolute;
+    content: "";
+    bottom: 6px;
+    left: 36%;
+    width: 100px;
+    height: 3px;
+    background-color: #3C3664;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+}
+span.singli-line-grad::before {
+    position: absolute;
+    content: "";
+    top: 14.5%;
+    left: 45%;
+    width: 100px;
+    height: 3px;
+    background-color: #3C3664;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+section#contact-us {
+    background: #f8f9fa;
+}
+section#contact-us input, section#contact-us textarea {
+    background-color: white;
+    box-shadow: 0 8px 20px 0 rgb(0 0 0 / 8%);
+    border-radius: 50px;
+    max-width: 450px;
+    width: 100%;
+    height: 60px;
+    border: none;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-left: 30px;
+    color: #000;
+}
+#contact-us > div > div > div:nth-child(2) > form {
+    text-align: -webkit-center;
+    margin-top: 3rem;
+    margin-bottom: 4.5rem;
+}
+
+#contact-us > div > div > div:nth-child(2) > form > textarea {
+    min-height: 200px;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-right: 20px;
+    resize: none;
+}
+
+.vid-img-area {
+    margin-bottom: 2.25rem;
+}
+
+@media (min-width: 768px){
+    .vid-img-area{
+    max-width: 53.125rem;
+    margin-right: auto;
+    margin-left: auto;
+    }
+}
+
+.vid-area {
+    position: relative;
+}
+.vid-area img {
+    box-shadow: 0 15px 40px 0 rgb(0 0 0 / 8%);
+    border-radius: 0.5rem !important;
+    padding: 20px;
+    margin-top: 3rem;
+}
+span.video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    display: block;
+    box-sizing: content-box;
+    width: 2rem;
+    height: 2.75rem;
+    padding: 1.125rem 1.25rem 1.125rem 1.75rem;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+span.video-play-button::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 4.75rem;
+    height: 4.75rem;
+    border-radius: 50%;
+    background: #00bfd8;
+    animation: pulse-border 1500ms ease-out infinite;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+span.video-play-button::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 50%;
+    background: #00bfd8;
+    transition: all 200ms;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+span.video-play-button span {
+    position: relative;
+    display: block;
+    z-index: 3;
+    top: 0.375rem;
+    left: 0.25rem;
+    width: 0;
+    height: 0;
+    border-left: 1.625rem solid #fff;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+}
+@keyframes pulse-border {
+	0% {
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+		opacity: 0;
+	}
 }
     </style>
 </head>
@@ -239,9 +400,7 @@ footer h3{
                     <div class="heading-steps">
                         <h3>Steps</h3>
                         <h2>Steps To Work</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere veniam magnam architecto,
-                            porro
-                            voluptatibus ipsa!</p>
+                        <p>Check Out Basic Steps Required To Use Our Application</p>
                     </div>
                 </div>
                 <div class="col-md-8 step-card">
@@ -253,10 +412,7 @@ footer h3{
                                     <div class="absolute-bg-img"><i class="uil uil-asterisk"></i></div>
                                     <div class="card-body">
                                         <h2>Step 01</h2>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk
-                                            of the card's
-                                            content.</p>
+                                        <p class="card-text">Download And Install Mink.Io Extension in Your Chrome Browser</p>
                                     </div>
                                 </div>
                             </div>
@@ -265,11 +421,8 @@ footer h3{
                                     <img src="image/bg-icon.png" class="card-img-top img-fluid" alt="bg-icon">
                                     <div class="absolute-bg-img"><i class="uil uil-asterisk"></i></div>
                                     <div class="card-body">
-                                        <h2>Step 01</h2>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk
-                                            of the card's
-                                            content.</p>
+                                        <h2>Step 02</h2>
+                                        <p class="card-text">Register With Mink.io</p>
                                     </div>
                                 </div>
                             </div>
@@ -278,11 +431,8 @@ footer h3{
                                     <img src="image/bg-icon.png" class="card-img-top img-fluid" alt="bg-icon">
                                     <div class="absolute-bg-img"><i class="uil uil-asterisk"></i></div>
                                     <div class="card-body">
-                                        <h2>Step 01</h2>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk
-                                            of the card's
-                                            content.</p>
+                                        <h2>Step 03</h2>
+                                        <p class="card-text">Visit Youtube And Click on Watch On Mink Url or Copy Video URL and Paste on Mink.io.</p>
                                     </div>
                                 </div>
                             </div>
@@ -291,20 +441,43 @@ footer h3{
                                     <img src="image/bg-icon.png" class="card-img-top img-fluid" alt="bg-icon">
                                     <div class="absolute-bg-img"><i class="uil uil-asterisk"></i></div>
                                     <div class="card-body">
-                                        <h2>Step 01</h2>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk
-                                            of the card's
-                                            content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                                        <h2>Step 04</h2>
+                                        <p class="card-text">Start Comanding Your Video With Mink</p>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        <section id="video-embeded">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12 text-center">
+                                                        <div class="heading pt-5">
+                                                            <h2 class="big-heading">Explore Mink</h2>
+                                                            <p class="about-content">Watch The Below Video To Understand More About Mink</p>
+                                                            <span class="singli-line-grad"></span>
+                                                        </div>
+                                                        <div class="col-md-12">
+                                                            <div class="vid-img-area">
+                                                                <div class="vid-area">
+                                                                    <a href="http://" target="_blank" rel="noopener noreferrer" class="yt-video">
+                                                                        <img src="image/festsvg.png" alt="Youtube Image" srcset="" class="img-fluid">
+                                                                        <span class="video-play-button">
+                                                                            <span></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </div>
+                                                                </div>
+                                        
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                        </section>
     <section id="how-to-use">
         <div class="container">
             <div class="row">
@@ -322,22 +495,47 @@ footer h3{
                 <div class="col-md-6">
                     <div class="how-to-use-descr">
                         <h2 class="small-heading">Explore Mink.ai</h2>
-                        <h2 class="big-heading">Why Choose Us?</h2>
-                        <p class="about-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
-                            ducimus voluptates possimus!</p>
+                        <h2 class="big-heading">Video Voice Commands</h2>
+                        <p class="about-content">Check Out Basic Commands Which You Can Use To Control Over Your Video With Just Your Voice</p>
                         <ul class="about-full-list">
-                            <li class="about-list-item list-item"><i class="uil uil-comment-check"></i>Our Use One</li>
-                            <li class="about-list-item list-item"><i class="uil uil-comment-check"></i>Our Use One</li>
-                            <li class="about-list-item list-item"><i class="uil uil-comment-check"></i>Our Use One</li>
-                            <li class="about-list-item list-item"><i class="uil uil-comment-check"></i>Our Use One</li>
+                            <li class="about-list-item list-item"><i class="uil uil-comment-check"></i><b>Stop | Wait:</b> This Will Pause Video
+                            </li>
+                            <li class="about-list-item list-item"><i class="uil uil-comment-check"></i><b>Play:</b> This Will Start/Play Video</li>
+                            <li class="about-list-item list-item"><i class="uil uil-comment-check"></i><b>Take Picture:</b> To Make Video Learning
+                                Easy,
+                                You Can Use This Commands To Take Pictures</li>
+                            <li class="about-list-item list-item"><i class="uil uil-comment-check"></i><b>Add Comments:</b> We Can Add Comment/Note
+                                At
+                                Point of Video With This Command</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer id="footer" class="pb-5">
-        <h3>Designed And Developed By <a href="mailto:developers@bagcampus.in">Mink Developers</a></h3>
+    <section id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="heading pt-5 text-center">
+                        <h2 class="big-heading">We're Happy To Communicate</h2>
+                        <p class="about-content">Fill Following Form If You Have Any Query/Doubt, Question, Suggetion or
+                            Feedback</p>
+                        <span class="singli-line-grad"></span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <form action="#" method="post">
+                        <input type="text" class="form-control" placeholder="Full Name" name="name" required>
+                        <input type="email" class="form-control" placeholder="Email Address" name="email" required>
+                        <textarea class="form-control" placeholder="Message" name="message" required></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="pb-md-5 pb-2">
+        <h3>Designed And Developed By <a href="mailto:feedback-minkio@gmail.com">Mink Developers</a></h3>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -359,6 +557,7 @@ footer h3{
             urlParams = new URLSearchParams(queryString), keys = urlParams.keys(),
             values = urlParams.values(), entries = urlParams.entries();
         for (const a of entries) console.log(`${a[0]}: ${a[1]}`)</script>
+
 </body>
 
 </html>
