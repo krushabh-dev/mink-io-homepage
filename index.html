@@ -384,7 +384,7 @@ span.video-play-button span {
                         Platform Which Helps
                         You To Make Your Video
                         Learning Easy!</h1>
-                    <div class="row">
+                    <div class="row ml-3 ml-md-1">
                         <a data-aos="zoom-in-up" data-aos-duration="90000" data-aos-delay="300" class="button"
                             href="https://chrome.google.com/webstore/detail/minkio/noapgfdnbjploocjccaladfgcjlkejjl?utm_source=chrome-ntp-icon" target="_blank">Add
                             Extension</a>
@@ -410,7 +410,7 @@ span.video-play-button span {
                         <h2>Steps To Work</h2>
                         <p>Check Out Basic Steps Required To Use Our Application</p>
                     </div>
-                </div>
+                    </div>
                 <div class="col-md-8 step-card">
                     <div class="container">
                         <div class="row">
@@ -573,6 +573,11 @@ span.video-play-button span {
             values = urlParams.values(), entries = urlParams.entries();
         for (const a of entries) console.log(`${a[0]}: ${a[1]}`)</script>
 
+<script>
+    if ($(window).width() < 960) {
+        alert("Dear Candidate, Thank You For Visiting Our Website But, We Found That Your Device is Not Suitable To Use Our Application. Make Sure You Use Laptop or Desktop To Use Our Application. You Can Click On Take Demo Button To Know More.")
+    }
+</script>
 </body>
 
 </html>
